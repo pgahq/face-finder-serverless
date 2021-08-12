@@ -50,11 +50,5 @@ module.exports = {
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
-
-    'node/no-unpublished-import': [
-      'error', {
-        'allowModules': ['@google-cloud/functions-framework'],
-      },
-    ],
   },
 }

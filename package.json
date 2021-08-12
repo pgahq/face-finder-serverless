@@ -7,7 +7,7 @@
     "src/functions/event/*"
   ],
   "scripts": {
-    "lint": "eslint --fix '**/*.{ts,js,json}'",
+    "lint": "eslint --fix '**/*.{ts,js}'",
     "compile": "tsc"
   },
   "repository": {

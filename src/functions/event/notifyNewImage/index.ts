@@ -1,7 +1,6 @@
-import type {EventFunction} from '@google-cloud/functions-framework';
+import type { EventFunction } from '@google-cloud/functions-framework';
+import { gql, request } from 'graphql-request';
 
-import {request,gql} from 'graphql-request'
+export const notifyNewImage: EventFunction = (data, ctx) => {
 
-export const notifyNewImage: EventFunction= (req, res) => {
-  return request()
 };
