@@ -34,3 +34,9 @@ coverage/
 !.vscode/extensions.json
 
 .envrc
+
+tsconfig.tsbuildinfo
+
+*.js
+*.d.ts
+*.js.map

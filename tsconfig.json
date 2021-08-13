@@ -11,5 +11,5 @@
     "sourceMap": true,
     "baseUrl": "./src",
     "incremental": true
-  }
+  },
 }

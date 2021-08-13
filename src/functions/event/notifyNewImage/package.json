@@ -1,8 +1,14 @@
 {
   "name": "new-image-notify",
   "version": "0.1.0",
+  "main": "index.js",
   "dependencies": {
     "graphql": "^15.5.1",
     "graphql-request": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint --fix '**/*.ts'",
+    "compile": "tsc"
   }
 }
