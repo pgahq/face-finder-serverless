@@ -1,0 +1,15 @@
+{
+  "name": "FaceFinder GraphQL Schema",
+  "schemaPath": "src/generated/schema.json",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://facefinder.dev.pga.com/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
