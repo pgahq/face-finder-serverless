@@ -1,6 +1,17 @@
-import type { EventFunction } from '@google-cloud/functions-framework';
+import type { Context } from '@google-cloud/functions-framework'
 import { gql, request } from 'graphql-request';
 
-export const notifyNewImage: EventFunction = (data, ctx) => {
-  return 1
+const NewPhoto = gql`
+  mutation NewPhoto($filename: String!) {
+    newPhoto(filename: $filename)
+  }
+`
+
+
+export const notifyNewImage = (file: {name: string}, ctx: Context): Promise<any> => {
+  const endpoint = process.env.GRAPHQL_ENDPOINT ?? 'https://facefinder.dev.pga.com/graphql'
+
+  return request(endpoint, NewPhoto, {
+    filename: file.name,
+  })
 };
