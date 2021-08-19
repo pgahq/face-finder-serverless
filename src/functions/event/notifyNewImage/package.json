@@ -9,6 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "lint": "eslint --fix '**/*.ts'",
-    "compile": "tsc"
+    "compile": "tsc",
+    "deploy": "gcloud functions deploy notifyNewImage --runtime nodejs14 --trigger-resource face-finder-storage --trigger-event google.storage.object.finalize"
   }
 }
