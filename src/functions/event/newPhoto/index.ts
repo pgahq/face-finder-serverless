@@ -8,7 +8,7 @@ const NewPhoto = gql`
 `
 
 
-export const notifyNewImage = (file: {name: string}, ctx: Context): Promise<any> => {
+export const newPhoto = (file: {name: string}, ctx: Context): Promise<any> => {
   const endpoint = process.env.GRAPHQL_ENDPOINT ?? 'https://facefinder.dev.pga.com/graphql'
 
   return request(endpoint, NewPhoto, {
